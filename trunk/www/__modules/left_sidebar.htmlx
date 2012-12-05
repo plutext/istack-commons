@@ -14,7 +14,7 @@ var info = {
 <ul id="main-menubar">
     <li><a href="https://maven.java.net/content/repositories/releases/com/sun/istack/">Downloads</a></li>
     <li><a href="http://java.net/projects/istack-commons/lists">Mailing lists</a></li>
-    <li><a href="http://java.net/jira/browse/ISTACK_COMMONS>"Issue tracker</a></li>
+    <li><a href="http://java.net/jira/browse/ISTACK_COMMONS">Issue tracker</a></li>
     <li><a href="http://java.net/projects/istack-commons/sources/svn/show/trunk">Source code</a></li>
 </ul>
 
