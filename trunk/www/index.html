@@ -1,89 +1,111 @@
 <html>
-<head> 
-	<title>IStack Commons</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <style>
-    .app H3 {
-      clear: none;
-    }
-    .axial {
-      display: none;
-    }
-    #apphead {
-      display: none;
-    }
-    #download-icon {
-      text-align: center;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      background-color: white;
-    }
-    .floatbox {
-      width:190px;
-      
-      // background:rgb(254,236,219);
-      background:rgb(238,238,238);
-      margin-top: 1em;
-      padding: 5px;
-      // border: 1px solid rgb(252,142,37);
-      border: 1px solid rgb(170,170,170);
-    }
-  </style>
-  <link rel="alternate" type="application/rss+xml" href="/servlets/ProjectNewsRSS">
-  <link rel="SHORTCUT ICON" href="http://jaxb.java.net/images/glassfish_favicon.gif">
+<head>
+    <style>
+        .app H3 {
+            clear: none;
+        }
+
+        .axial {
+            display: none;
+        }
+
+        #apphead {
+            display: none;
+        }
+
+        #helptext {
+            display: none;
+        }
+
+        #searchbox {
+            display: none;
+        }
+
+        #download-icon {
+            text-align: center;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            background-color: white;
+        }
+
+	#subprojects {
+		display: none;
+	}
+
+        .floatbox {
+            width: 190px;
+
+        / / background : rgb ( 254, 236, 219 );
+            background: rgb( 238, 238, 238 );
+            margin-top: 1em;
+            padding: 5px;
+        / / border : 1 px solid rgb ( 252, 142, 37 );
+            border: 1px solid rgb( 170, 170, 170 );
+        }
+
+        #creditfooter IMG {
+            display: none;
+        }
+
+    </style>
+    <title>IStack Commons</title>
 </head>
 <body>
 
-<table border="0" width="100%">
-  <tr>
-    <td><a href="http://glassfish.java.net" alt="GlassFish Community"><img align="left" src="http://jaxb.java.net/images/glassfish_logo.gif" valign="top" style="border: 0px solid"></a></td>
-    <td>
-    	<h1>istack-commons Project</h1>
-	  Part of <a href="http://glassfish.java.net">Project GlassFish</a>
-    </td>
-    <td width="*">
-      <div align=right>
-      <a href="/servlets/ProjectNewsRSS"><img src="http://jaxb.java.net/images/rss1.gif" border="0"></a><br>
-      <small>
-        (<a href="http://wiki.java.net/bin/view/Javawsxml/RssCorner">new to RSS?</a>)
-      </small>
-      </div>
-    </td>
-  </tr>
-</table>
+    <div align="left">
+        <table valign="middle" class="directory" border="0">
+            <tbody>
+                <tr>
+                    <table border="0" class="icon"><tbody>
+                        <tr>
+                            <td>
+                                    <a href="https://maven.java.net/content/repositories/releases/com/sun/istack/"><img src="images/download.png" class="logo"></a>
+                            </td>
+                            <td>
+                                    <a href="http://java.net/projects/istack-commons/lists"><img src="images/communicate.gif" class="logo"></a>
+                            </td>
+                            <td>
+                                    <a href="http://java.net/projects/istack-commons/sources/svn/show/trunk"><img src="images/extend.gif" class="logo"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; font-weight: bold">
+                                    <a href="https://maven.java.net/content/repositories/releases/com/sun/istack/"><div class="title">Download</div></a>
+                            </td>
+                            <td style="text-align: center; font-weight: bold">
+                                    <a href="http://java.net/projects/istack-commons/lists"><div class="title">Communicate</div></a>
+                            </td>
+                            <td style="text-align: center; font-weight: bold">
+                                    <a href="http://java.net/projects/istack-commons/sources/svn/show/trunk"><div class="title">Contribute</div></a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-
-<div class=app>
-
-
-<h3>Project Description</h3>
-<p>
-	<a href="http://jaxp.java.net/">JAXP</a>,
+    <div class=app>
+        <p>Welcome to the iStack Commons project.
+        <a href="http://jaxp.java.net/">JAXP</a>,
 	<a href="http://jaxb.java.net/">JAXB</a>,
 	<a href="http://saaj.java.net/">SAAJ</a>, and
 	<a href="http://jax-ws.java.net/">JAX-WS</a> projects
 	are often used together by other projects (such as 
-	<a href="http://mustang.java.net/">Mustang</a>,
-	<a href="http://glassfish.java.net/">Glassfish</a>.
-	
-	But at the same time, they are released independently, and those technolgoies don't necessarily have
-	dependencies between them. 
-<p>
-	To promote code reuse between these projects, we host the common part in a separate project,
-	so that when we ship individually, we can each carry <tt>istack-commons.jar</tt>, and
-	when e deliver together into another technology, we can reduce the footprint.
-
-<h3>Overview</h3>
-
-<p>
-<ul>
-  <li><strong>Licenses:</strong> Dual license consisting of the
-    <a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html">
-        CDDL v1.1 and GPL v2</a>.</li>
-  <li><strong>Governance:</strong><a href="http://glassfish.java.net/public/GovernancePolicy.html">Same as Project GlassFish</a></li>
-</ul>
-
-</div>
+	<a href="http://mustang.java.net/">JDK</a>,
+	<a href="http://glassfish.java.net/">Glassfish</a>, ... .
+        </p>
+        <p>But at the same time, they are released independently, and those technologies don't necessarily have
+	dependencies between them.</p>
+        <p>To promote code reuse between these projects, we host the common part in a separate project,
+	so that when we ship individually, each technology can carry <tt>istack-commons-*.jar</tt>, and
+	when the technologies are delivered together into e.g. JDK, the footprint can be reduced.
+        </p>
+        <ul>
+            <li><strong>License:</strong> <a href="http://glassfish.java.net/public/CDDL+GPL_1_1.html"> CDDL v1.1 and GPL v2</a></li>
+            <li><strong>Status:</strong> Production Quality
+            <li><strong>Governance:</strong> <a href="http://glassfish.java.net/public/GovernancePolicy.html">Same as Project GlassFish</a></li>
+        </ul>
+    </div>
 </body>
 </html>
-
